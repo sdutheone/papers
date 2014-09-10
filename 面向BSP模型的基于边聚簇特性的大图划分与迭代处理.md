@@ -10,8 +10,8 @@
 1. BSP:(Bulk Synchronous Parallel)整体同步并行
 2. 现有基于BSP模型的图处理系统的迭代计算通常是消息驱动,以顶点为中心计算的.
 ###BC-BSP系统
-1. 以**邻接表格式组织**,如图:![](http://i.imgur.com/awf7u6I.jpg)
-2. 系统结构图:![](http://i.imgur.com/DfKyvVp.jpg)
+1. 以**邻接表格式组织**,如图:<br>![](http://i.imgur.com/awf7u6I.jpg)
+2. 系统结构图:<br>![](http://i.imgur.com/DfKyvVp.jpg)
 
 ##基于边聚簇的垂直混合划分
 1. 划分策略:
@@ -21,8 +21,10 @@
 
 > - **聚簇边路由**:指明维护聚簇边的**目的任务分区**,顶点v到任务分区的聚簇边路由:CER(Clustered edges router).对于顶点的聚簇边划分集的任务分配.--就是处理一个顶点的聚簇边集需要哪些任务
 
-1. 算法流程,![](http://i.imgur.com/TVLSDda.jpg)
-2. 
+1. 算法流程,<br>
+![](http://i.imgur.com/TVLSDda.jpg)
+2. 效果图<br>
+![](http://i.imgur.com/sEGb9b9.jpg)
 
 ##questions
 1. 任务分区:**每个数据分区交给不同的任务worker**
