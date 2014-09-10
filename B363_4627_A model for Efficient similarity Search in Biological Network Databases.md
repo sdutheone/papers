@@ -40,7 +40,13 @@ Query Network, 生物网络
 1. Better upper bounds 
 	但是复杂
 2. 用自适应的方法,利用生物学里的pathway information 进行类似**分组**的操作, 有同样的pathway information的图相似可能性更大. 在分组内进行选择reference操作
-3. Heuristic and criteria: 自适应准则
+3. Heuristic:  "find" or "discover"启发式的:根据一定的经验-一定的限制条件,在问题空间内进行**较少的搜索**.不一定保证问题的解决,能找到较好的结果
+	1. 计算qeury q 和网络d的相似度:用所有点的相似度之和表达(相似度矩阵)
+	2. 计算相似度分数上界:相似度矩阵的最大值
+4. criteria: 准则
+	1. q和d的biological pathways 相同,而且相似度最大
+	2. **或者**相似度的一半大于限定值(cut-off value)
+
 
 ###问题
 1. alignment: 比对
@@ -49,3 +55,4 @@ Query Network, 生物网络
 3. table1和图3,4
 4. pathway information
 5. BLAST:BLAST for Basic Local Alignment Search Tool is an algorithm for comparing primary biological sequence information, such as the amino-acid sequences of different 
+6. recall rate
