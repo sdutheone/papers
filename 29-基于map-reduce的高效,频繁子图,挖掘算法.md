@@ -1,4 +1,13 @@
-29-基于map-reduce的高效,频繁子图,挖掘算法===摘要---在扩展边生成新的子图时，使用已经**挖掘出的支持度为 k-1 的频繁子图**生成**频繁度为 k 的频繁子图**。同时，检查是否存在待扩展生成的子图.##论文思想:
+29-基于map-reduce的高效,频繁子图,挖掘算法
+===
+
+
+摘要
+---
+在扩展边生成新的子图时，使用已经**挖掘出的支持度为 k-1 的频繁子图**生成**频繁度为 k 的频繁子图**。同时，检查是否存在待扩展生成的子图.
+
+##论文思想:
+
 
 
 ### 流程图
@@ -27,3 +36,14 @@
 - 用排序保证
 - 先部分排序:重点按照字母表排序
 - 后整体排序:起点排序
+```
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
+```
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
