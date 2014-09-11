@@ -36,3 +36,9 @@
 - 用排序保证
 - 先部分排序:重点按照字母表排序
 - 后整体排序:起点排序
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
