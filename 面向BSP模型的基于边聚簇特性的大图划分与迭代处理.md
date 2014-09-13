@@ -1,10 +1,13 @@
 #面向BSP模型的基于边聚簇特性的大图划分与迭代处理
+
+[TOC]
 简介
---
+---
 - Hadoop不适合迭代式的处理图的数据:**因为图数据中并行化数据的缺失**
 - 基于BSP的解决方案-pregel,hama,giraph: 但是要频繁交换中间计算结果
 
 ##创新点
+
 1. 顶点邻接表中的多条边**可按照目的顶点所在数据区域进行聚簇的特性**基于边聚簇的垂直混合划分策略(EC-VHP):对邻接表进行hash水平划分和边聚簇垂直混合划分,建立代价收益模型
 2. 在EC-VHP的基础上提出了**点-边计算模型**
 3. 设计**简单Hash索引**和**多队列并行顺序索引机制**
@@ -27,6 +30,7 @@
 > - 将平均初读为|E|/|V|的图划分到p个任务上,若p小于平均出度,则
 
 > - **聚簇边路由**:指明维护聚簇边的**目的任务分区**,顶点v到任务分区的聚簇边路由:CER(Clustered edges router).对于顶点的聚簇边划分集的任务分配.--就是处理一个顶点的聚簇边集需要哪些任务
+
 
 1. 算法流程,<br>
 ![](http://i.imgur.com/TVLSDda.jpg)
@@ -73,7 +77,4 @@
 	3. Barrier Synchonization:障碍同步,栅栏同步.每一次同步也是一个超步的完成和下一个超步的开始
 	4. Superstep 超步: 是bsp的一次迭代计算
 	5. 由程序控制结束:选出一个master控制
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+
